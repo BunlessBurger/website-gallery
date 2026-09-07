@@ -3,11 +3,11 @@ const progressList = [
     {
         date: "August 24 and 25",
         desc: "- vertical nav bar and grid with images",
-        srcList: ["assets/progress/20260825_wip.png","progress/20260826_wip1.png"]},
+        srcList: ["assets/progress/20260825_wip.png","assets/progress/20260826_wip1.png"]},
     {
         date: "August 26",
         desc: "- replaced images with buttons and created an about-image div",
-        srcList: ["assets/progress/20260826_wip2.png","progress/20260826_wip3.png"]},
+        srcList: ["assets/progress/20260826_wip2.png","assets/progress/20260826_wip3.png"]},
     {
         date: "August 27",
         desc: "- form to filter by year",
@@ -15,19 +15,19 @@ const progressList = [
     {
         date: "August 29",
         desc: "- display the filtered images and added options to filter by content",
-        srcList: ["assets/progress/20260829_wip1.png","progress/20260829_wip2.png"]},
+        srcList: ["assets/progress/20260829_wip1.png","assets/progress/20260829_wip2.png"]},
     {
         date: "September 5",
         desc: "- edited the about-image info, dark mode with css and js, and started the about-website div",
-        srcList: ["assets/progress/20260905_wip1.png","progress/20260905_wip3.png","progress/20260905_wip2.png"]},
+        srcList: ["assets/progress/20260905_wip1.png","assets/progress/20260905_wip3.png","assets/progress/20260905_wip2.png"]},
     {
         date: "September 6",
         desc: "redid the about-website by creating buttons and radio input",
-        srcList: ["assets/progress/20260906_wip1.png","progress/20260906_wip2.png"]},
+        srcList: ["assets/progress/20260906_wip1.png","assets/progress/20260906_wip2.png"]},
     {
         date: "September 7",
         desc: "- created functions for the buttons and radio input in the about-website div",
-        srcList: ["assets/progress/20260907_wip1.png","progress/20260907_wip2.png"]}
+        srcList: ["assets/progress/20260907_wip1.png","assets/progress/20260907_wip2.png"]}
         //date: "",
         //desc: "",
         //srcList: ["","",""]}, //add/remove commma
