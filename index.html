@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="icon" type="image/png" href="progress/signature.PNG">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="indexToggles.js"></script>
+    <script src="aboutImgs.js"></script>
+</head>
+
+<body>
+    
+    <nav class="navSide" id="navBar">
+    </nav>
+    
+    <script src="nav.js"></script>
+    <script src="showImgs.js"></script>
+
+    <main>
+        <h1>Portfolio</h1>
+
+        
+        <form id="formFilter">
+            <label for="formFilter">Filter by content</label>
+            <br>
+            <input type="checkbox" name="content" id="content1" value="character" checked>
+            <label for="content1">Character</label>
+            <input type="checkbox" name="content" id="content2" value="wallpaper" checked>
+            <label for="content1">Wallpaper</label>
+            <input type="checkbox" name="content" id="content3" value="doodle" checked>
+            <label for="content1">Doodles</label>
+            <br><br>
+        </form>
+        <script src="filterYear.js"></script><hr>
+        <script>toggleSearch()</script>
+
+
+        
+        <p id="gridP">Images</p>
+        <div class="divGrid" id="grid">
+            
+            <div class="divCell" id="column1">
+            </div>
+            
+            <div class="divCell" id="column2">
+            </div>
+            
+            <div class="divCell" id="column3">
+            </div>
+        </div>
+
+        
+        <div class="divInfo" id="focus" style="display:none;">
+            <button type="button" class="interact border" onclick="toggleColumns()">&#x1F808; back</button>
+            <div>
+                <img src="traditional/20220801_beachedwhale.webp" alt="alt text" id="focusImg">
+                <p id="focusTags">tags</p><hr>
+                <p id="focusDesc" class="pInfo">description</p>
+            </div>
+        </div>
+
+        
+        <div class="divInfo" id="about" style="display:none;">
+            <div class="divInfo border">
+                <p class="about">Total Artwork:</p>
+                <h4 class="about">21</h4>
+            </div>
+            <div>
+                <h2>About</h2>
+                <hr>
+                <p class="pInfo">This website is meant to display some of my best drawings. It's essentially an informal portfolio. All images, including the favicon, were drawn by me.<br>My hobby, first and foremost, is still programming. I just like to dabble in art a little. So this is a way for me to show off my art while practicing using HTML and JavaScript. For example, this was the first time I created a form, buttons with images, a vertical sidebar, among other things.</p>
+                <hr><br>
+                <h2>This Website</h2>
+                <p>Because this is a coding project, here are work in progress screenshots from each day that I worked on the website:</p>
+            
+            </div>
+            <div class="divFlex">
+                <button type="button" class="interact border btnPrev" id="aboutPrev" onclick="prevProgress()">&#9204;</button>
+                <button type="button" class="interact border btnNext" id="aboutNext" onclick="nextProgress()">&#9205;</button>
+            </div>
+            
+            <div class="divSmall">
+                
+                <h4 class="about" id="aboutDate">August 24 and 25</h4>
+                <p class="about" id="aboutDesc">- vertical nav bar and grid with images</p>
+                <div class="divGrid">
+                    <div class="divCell">
+                        <button type="button" onclick="aboutNextImg()">
+                            <img src="progress/20260825_wip.png" id="aboutImg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+
+            <div id="carouselDiv">
+                <input type="radio" name="carousel" id="carousel0" value="0" onclick="aboutImg(0)" checked>
+                <input type="radio" name="carousel" id="carousel1" value="1" onclick="aboutImg(1)">
+                <input type="radio" name="carousel" id="carousel2" value="2" onclick="aboutImg(2)">
+            </div>
+            
+            <p id="aboutProgressIndex" class="hidden">0</p>
+            <p id="aboutImgIndex" class="hidden">0</p>
+            
+            <script>aboutDay(0)</script>
+            
+        </div>
+        
+        
+    </main>
+    
+</body>
+
+</html>
